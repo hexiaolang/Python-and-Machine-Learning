@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.grid_search import GridSearchCV
 from time import time
 
-if __name__=='__main__':
+if __name__ == '__main__':
     news = fetch_20newsgroups('all')
     X_train, X_test, y_train, y_test = train_test_split(news.data[:3000],
                                                         news.target[:3000],
